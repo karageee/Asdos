@@ -1,2 +1,2 @@
 # Asdos
- All codes for Asdos
+ All codes and explanation for meetings
