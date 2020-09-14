@@ -3,25 +3,121 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Testing</title>
 </head>
 <style>
-  h1 {
-    font-family: 'Courier New';
-    color: orangered;
+  h1,
+  p {
+    font-family: arial, "verdana", sans-serif;
+    color: ghostwhite;
   }
 
   #internal {
     background-color: aliceblue;
     border: 2px solid black;
+    padding: 5px;
   }
+
+  body,
+  html {
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  body {
+    background-image: url(download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .card {
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .card .profile img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: 5%;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 5px;
+  }
+
+  .isi-profile {
+    padding: 30px;
+  }
+
+  .biodata {
+    text-align: left;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .fa{
+    padding: 20px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
 </style>
 
 <body>
-  <h1>This is a test</h1>
-  <p id="internal">
-    This Dio da!
-  </p>
+  <div class="card">
+    <div class="profile">
+      <img src="535170006.jpg" />
+    </div>
+    <div class="isi-profile">
+      <h1>Gilbert Alexandro Onggo</h1>
+      <p>
+        Universitas Tarumanagara <br /> Angkatan 2017
+      </p>
+    </div>
+    <div class="biodata">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>: Gilbert Alexandro Onggo</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>: 20 years old</td>
+        </tr>
+        <tr>
+          <td>Adress</td>
+          <td>: Green Bay</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>: (+62) 856-867-7735</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>: <a style="color: white" href="mailto:gilbert.535170006@stu.untar.ac.id">gilbert.535170006@stu.untar.ac.id</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="Social">
+      <a href="facebook.com" class="fa fa-facebook"></a>
+      <a href="instagram.com" class="fa fa-instagram"></a>
+    </div>
+  </div>
 </body>
 
 </html>
