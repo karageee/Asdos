@@ -1,5 +1,4 @@
 const express = require('express');
-const session = require('express-session');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 mongoose.connect(
@@ -12,7 +11,6 @@ db.once("open", () =>{
 });
 
 const member = require('./models/Member');
-const { json } = require('body-parser');
 const router = express.Router();
 
 router.get('/login', async (req, res) => {
